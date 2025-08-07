@@ -4,10 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\{Route, Auth, Http, Log, DB};
 use App\Http\Controllers\Auth\{LoginController, RegisterController};
 use App\Http\Controllers\HomeController;
-
-Route::get('/', function () {
-    return view('welcome');
-});
+use App\Http\Controllers\Website\WebsiteController;
 
 Route::group(['middleware' => 'guest'], function () {
     Route::get('login', [LoginController::class, 'showLoginForm'])->name('login');
@@ -22,6 +19,8 @@ Route::get('/logout', function () {
     Auth::logout();
     return redirect()->route('login');
 })->name('logout');
+
+Route::get('/', [WebsiteController::class, 'index'])->name('welcome');
 
 Route::group(['middleware' => 'is_admin'], function () {
     Route::get('home', [HomeController::class, 'index'])->name('home');

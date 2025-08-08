@@ -1,9 +1,4 @@
-.ifreame-container {
-    padding: 20px 40px;
-    width: --webkit-fill-available;
-}
-
-.ifreame-container div {
+.facebook-container div {
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
@@ -11,13 +6,44 @@
     width: 100%;
 }
 
-iframe {
+.facebook-container iframe {
     margin: 15px 5px;
     border: none;
     flex: 0 0 auto;
     min-width: 500px;
     width: 300px;
     height: 525px;
+}
+
+.facebook-container,
+.youtube-container,
+.tiktok-container,
+.line-container,
+.video-mayor-container,
+.btn-service-container {
+    padding: 20px 40px;
+    text-align: center;
+}
+
+.tiktok-container,
+.line-container {
+    height: 657px;
+}
+
+.youtube-container iframe,
+.video-mayor-container iframe {
+    margin: 5px;
+    width: 500px;
+    height: 267px;
+}
+
+.btn-service-container div {
+    margin: 20px 0 40px 0;
+}
+
+.btn-service-container div img {
+    margin: 10px;
+
 }
 
 #imageModal {
@@ -32,4 +58,22 @@ iframe {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+/* FullCalendar */
+#calendar {
+    padding: 20px;
+    background-color: #FFF;
+    border: none;
+    border-radius: 6px;
+    width: 80%;
+}
+
+.fc-scrollgrid-sync-inner a {
+    color: #000;
+    text-decoration: none;
+}
+
+.fc .fc-daygrid-day.fc-day-today {
+    background-color: #f0f0f0;
 }

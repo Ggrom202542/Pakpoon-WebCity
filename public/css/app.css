@@ -72,6 +72,30 @@ main {
     height: 40px;
 }
 
-.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
     color: var(--color-4);
+}
+
+.nav-tabs .nav-link {
+    width: 470px;
+}
+
+/* btn top */
+#scrollTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 99999;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    font-size: 2rem;
+    cursor: pointer;
+    transition: background 0.2s;
 }

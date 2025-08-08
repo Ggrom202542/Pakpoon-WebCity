@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use App\Models\NewsStation;
+use App\Models\News\NewsStation;
 
 class NewsStationSeeder extends Seeder
 {
@@ -75,6 +75,67 @@ class NewsStationSeeder extends Seeder
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
+            [
+                'name' => 'Youtube News',
+                'url' => 'https://www.youtube.com/embed/rfVVQTyk3MI?si=PCVIPS395O5entrI',
+                'type' => 'Youtube',
+                'icon' => '', // Assuming you have an icon file named tiktok-icon.png
+                'description' => 'ข่าวสารและกิจกรรมจากเทศบาลเมืองปากพูน',
+                'created_by' => null,
+                'updated_by' => null,
+                'date_announce' => '2025-05-11',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'name' => 'Youtube News',
+                'url' => 'https://www.youtube.com/embed/DZVvPQAq9XQ?si=qi6yq3z-kZcX_cpm',
+                'type' => 'Youtube',
+                'icon' => '', // Assuming you have an icon file named tiktok-icon.png
+                'description' => 'ข่าวสารและกิจกรรมจากเทศบาลเมืองปากพูน',
+                'created_by' => null,
+                'updated_by' => null,
+                'date_announce' => '2025-02-27',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'name' => 'Youtube News',
+                'url' => 'https://www.youtube.com/embed/Dn_1KdZzXGE?si=txLEZcR-41mGXJE9',
+                'type' => 'Youtube',
+                'icon' => '', // Assuming you have an icon file named tiktok-icon.png
+                'description' => 'ข่าวสารและกิจกรรมจากเทศบาลเมืองปากพูน',
+                'created_by' => null,
+                'updated_by' => null,
+                'date_announce' => '2025-01-12',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'name' => 'Youtube News',
+                'url' => 'https://www.youtube.com/embed/Mxqx-sliovI?si=LlxK5IzvNUFuOKH4',
+                'type' => 'Youtube',
+                'icon' => '', // Assuming you have an icon file named tiktok-icon.png
+                'description' => 'ข่าวสารและกิจกรรมจากเทศบาลเมืองปากพูน',
+                'created_by' => null,
+                'updated_by' => null,
+                'date_announce' => '2025-01-12',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'name' => 'Youtube News',
+                'url' => 'https://www.youtube.com/embed/Qi3CK1HN2i4?si=Y5ikVFsLvAAN-RCm',
+                'type' => 'Youtube',
+                'icon' => '', // Assuming you have an icon file named tiktok-icon.png
+                'description' => 'ข่าวสารและกิจกรรมจากเทศบาลเมืองปากพูน',
+                'created_by' => null,
+                'updated_by' => null,
+                'date_announce' => '2024-12-18',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+
         ];
         NewsStation::insert($data);
     }
